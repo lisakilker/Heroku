@@ -1,5 +1,27 @@
-<h2>Inbox</h2>
+<br>
+<br>
+<br>
+<center>
+<body><div class="inbox"><br>
+<h2>Your GoJunket Inbox</h2>
 <% @messages.each do |message| %>
-   <%= message.content %>
+	
+	From:<br><%= link_to(message.sender.name, user_path(message.sender)) %><br><br>
+	
+	Sent:<br><%= message.created_at %><br><br>
+	
+	Would like to:<br><%= @activities[message.activities.to_i] %><br><br>
+   
+	At:<br><%= @times[message.times.to_i] %><br><br>
+   
+	Note:<br><%= message.content %><br><br>
+   
+	<%= link_to "Delete", "/users/#{current_user.id}/messages/#{message.id}", method: :delete %>
+	<br>---------------<br>
 <% end %>
+<br>
+</div>
+</body>
+</center>
+
 
