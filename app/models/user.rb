@@ -4,7 +4,17 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
 	has_attached_file :avatar, :styles => { :medium => "250x250>", :thumb => "150x150#" }, :default_url => "/images/:style/missing.png"
-	validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/
+	validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/,
+    
+    :url  => ":s3_domain_url",
+    :path => "public/avatars/:id/:style_:basename.:extension",
+	:storage => :fog,
+    :fog_credentials => {
+        provider: 'AWS',
+        aws_access_key_id: ENV["AWS_ACCESS_KEY_ID"],
+        aws_secret_access_key: ENV["AWS_SECRET_ACCESS_KEY"]
+    },
+    fog_directory: ENV["FOG_DIRECTORY"]
 
 	validates :name, presence: true
 	validates :date_of_birth, presence: true

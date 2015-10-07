@@ -1,0 +1,22 @@
+# Add configuration values here, as shown below.
+#
+# pusher_app_id: "2954"
+# pusher_key: 7381a978f7dd7f9a1117
+# pusher_secret: abdc3b896a0ffb85d373
+# stripe_api_key: sk_test_2J0l093xOyW72XUYJHE4Dv2r
+# stripe_publishable_key: pk_test_ro9jV5SNwGb1yYlQfzG17LHK
+#
+# production:
+#   stripe_api_key: sk_live_EeHnL644i6zo4Iyq4v1KdV9H
+#   stripe_publishable_key: pk_live_9lcthxpSIHbGwmdO941O1XVU
+
+SECRET_KEY_BASE: cbba928eb8ee4f22fd69cf0f123df308eaa8982193d7c6eed70f32aa95d2856a9051326a938e573bd9286a595955928d8f599d60cec96cac7df7fa47ebc76768
+AWS_ACCES_KEY_ID: AKIAIEDDK4TRTZUV3X4Q
+AWS_SECRET_ACCESS_KEY: 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
+EMAIL_LOGIN: gojunket@gmail.com
+EMAIL_PASSWORD: japanesa3
+
+development:
+  FOG_DIRECTORY: rails-lisa-demo-dev
+production:
+  FOG_DIRECTORY: rails-lisa-demo-production
