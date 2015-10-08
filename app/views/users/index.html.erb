@@ -3,7 +3,8 @@
 <h2>Meet your fellow GoJunkies</h2>
 <% @users.each do |user| %>
 	<li><%= link_to user.name, user_path(user) %></li>
+	<%= link_to user_path(user) do %>
 	<%= image_tag user.avatar.url(:thumb), :style => "border: 1px solid Cyan" %>
-<% end %>
+<% end %><% end %>
 </body><br><br></div>
 </center>
