@@ -12,26 +12,26 @@
     </div>
     <br>
 
-    <div class="field">
+    <div class="field2">
         <%= f.label :name %><br />
         <%= f.text_field :name, autofocus: true %>
     </div>
     <br>
 
-    <div class="field">
-        <%= f.label :location, "City" %><br />
+    <div class="field2">
+        <%= f.label :location, "City" %><br>
         <%= f.text_field :location, autofocus: true %>
     </div>
     <br>
 
-    <div class="field">
-        <%= f.label :state, "State (Two letters)" %><br />
+    <div class="field2">
+        <%= f.label :state, "State"  %><br>(Two letters)<br>
         <%= f.text_field :state, autofocus: true, :maxlength=>2 %>
     </div>
     <br>
 
     <div class="form-group">
-        <%= f.label :gender, "Gender (Select the gender you identify as)", class: 'col-sm-2 control-label'  %>
+        <%= f.label :gender, "Gender", class: 'col-sm-2 control-label' %><br>(Select the gender you identify as)
     <div class="col-sm-6">
         <%= f.radio_button :gender, :Guy %> <%= f.label :gender, "Guy" %>
         <%= f.radio_button :gender, :Girl %> <%= f.label :gender, "Girl" %>
@@ -80,7 +80,7 @@
     <br>
 
     <div class="form-group">
-       <%= f.label :kids, "Have kiddos?", class: 'col-sm-2 control-label'  %>
+        <%= f.label :kids, "Have kiddos?", class: 'col-sm-2 control-label'  %>
     <div class="col-sm-6">
         <%= f.radio_button :kids, true %> <%= f.label :kids, "Yup" %>
         <%= f.radio_button :kids, false %> <%= f.label :kids, "Nope" %>
@@ -107,20 +107,20 @@
     <br>
 
     <div>What are you interested in?<br>
-    <ul class="checkbox-grid"> <% Interest.all.each do |int| %>
-      <li><%= check_box_tag "user_interests_ids_#{int.id}", int.id, (f.object.interests.present? && f.object.interests.include?(int.id)), {:name => "user[interests_ids][]"} %>
+        <ul class="checkbox-grid"> <% Interest.all.each do |int| %>
+        <li><%= check_box_tag "user_interests_ids_#{int.id}", int.id, (f.object.interests.present? && f.object.interests.include?(int.id)), {:name => "user[interests_ids][]"} %>
         <%= label_tag "user_interests_ids_#{int.id}", int.name %> <% end %></li>
     </ul>
     </div>
     <br>
 
-    <div class="field">
+    <div class="field2">
         <%= f.label :description, "The 411 on me"%><br>(You have 500 characters, go!)<br/>
         <%= f.text_area :description, autofocus: true, :maxlength=>500 %>
     </div>
     <br>
     
-    <div class="field">
+    <div class="field2">
         <%= f.label :email, "Update email" %><br />
         <%= f.email_field :email, autofocus: true %>
     </div>
@@ -129,25 +129,25 @@
         <% end %>
     <br>
 
-    <div class="field">
+    <div class="field2">
         <%= f.label :password, "Update password"  %><br>(Go ahead and leave this blank if you don't need to change your password)<i></i><br />
         <%= f.password_field :password, autocomplete: "off" %>
     </div>
-    <div class="field">
+    <div class="field2">
         <%= f.label :password_confirmation, "Confirm new password" %><br />
         <%= f.password_field :password_confirmation, autocomplete: "off" %>
     </div>
     <br>
 
-  <div class="field">
+    <div class="field2">
         <%= f.label :current_password, "Enter current password to confirm all these changes"%> <i></i><br />
         <%= f.password_field :current_password, autocomplete: "off" %>
-  </div>
-  <br>
-  <div class="actions">
-      <%= f.submit "Update", :class => 'button'%>
-  </div>
-    <% end %><br></div><br>
-  <p><%= button_to "Deactivate my account", registration_path(resource_name), data: { confirm: "Are you absolutey, positively sure you want to close your account?" }, method: :delete %></p>
+    </div>
+    <br>
+    <div class="actions">
+        <%= f.submit "Update", :class => 'buttons'%>
+    </div>
+        <% end %><br></div><br>
+    <p><%= button_to "Deactivate my account", registration_path(resource_name), data: { confirm: "Are you absolutey, positively sure you want to close your account?" }, method: :delete %></p>
 </body>
 </center>

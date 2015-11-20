@@ -1,9 +1,0 @@
- <div><%= f.submit "Send" %></div>
-
-			<h2>Inbox</h2>
-<% @messages.each do |message| %>
-   <%= message.content %>
-<% end %>
-
-
-<div><button type="submit" form="param_search" value="Submit">Send message</button></div>

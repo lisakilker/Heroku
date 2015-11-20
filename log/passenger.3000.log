@@ -4,3 +4,26 @@
 [ 2015-10-07 16:19:29.1116 6496/0x7fff794ef300 age/Cor/CoreMain.cpp:706 ]: Passenger core online, PID 6496
 [ 2015-10-07 16:19:29.1181 6498/0x7fff794ef300 age/Ust/UstRouterMain.cpp:503 ]: Starting Passenger UstRouter...
 [ 2015-10-07 16:19:29.1188 6498/0x7fff794ef300 age/Ust/UstRouterMain.cpp:316 ]: Passenger UstRouter online, PID 6498
+
+
+[ 2015-10-08 20:05:02.4677 6496/0x105846000 age/Cor/CoreMain.cpp:506 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2015-10-08 20:05:02.4677 6498/0x10e0ac000 age/Ust/UstRouterMain.cpp:396 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2015-10-08 20:05:02.4699 6498/0x7fff794ef300 age/Ust/UstRouterMain.cpp:466 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2015-10-08 20:05:02.4700 6496/0x7fff794ef300 age/Cor/CoreMain.cpp:875 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2015-10-08 20:05:02.4715 6498/0x10e0ac000 Ser/Server.h:443 ]: [UstRouter] Shutdown finished
+[ 2015-10-08 20:05:02.4720 6498/0x10e1b2000 Ser/Server.h:757 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2015-10-08 20:05:02.4720 6498/0x10e1b2000 Ser/Server.h:443 ]: [UstRouterApiServer] Shutdown finished
+[ 2015-10-08 20:05:02.4735 6496/0x105b58000 Ser/Server.h:757 ]: [ServerThr.4] Freed 128 spare client objects
+[ 2015-10-08 20:05:02.4736 6498/0x7fff794ef300 age/Ust/UstRouterMain.cpp:497 ]: Passenger UstRouter shutdown finished
+[ 2015-10-08 20:05:02.4736 6496/0x105b58000 Ser/Server.h:443 ]: [ServerThr.4] Shutdown finished
+[ 2015-10-08 20:05:02.4740 6496/0x105846000 Ser/Server.h:757 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2015-10-08 20:05:02.4741 6496/0x105846000 Ser/Server.h:443 ]: [ServerThr.1] Shutdown finished
+[ 2015-10-08 20:05:02.4742 6496/0x105c5e000 Ser/Server.h:757 ]: [ApiServer] Freed 0 spare client objects
+[ 2015-10-08 20:05:02.4742 6496/0x105c5e000 Ser/Server.h:443 ]: [ApiServer] Shutdown finished
+[ 2015-10-08 20:05:02.4744 6496/0x105a52000 Ser/Server.h:757 ]: [ServerThr.3] Freed 128 spare client objects
+[ 2015-10-08 20:05:02.4745 6496/0x105a52000 Ser/Server.h:443 ]: [ServerThr.3] Shutdown finished
+[ 2015-10-08 20:05:02.4749 6496/0x10594c000 Ser/Server.h:757 ]: [ServerThr.2] Freed 128 spare client objects
+[ 2015-10-08 20:05:02.4749 6496/0x10594c000 Ser/Server.h:443 ]: [ServerThr.2] Shutdown finished
+
+[ 2015-10-08 20:05:02.4803 6496/0x105846000 age/Cor/CoreMain.cpp:506 ]: Signal received. Gracefully shutting down... (send signal 1 more time(s) to force shutdown)
+[ 2015-10-08 20:05:02.4845 6496/0x7fff794ef300 age/Cor/CoreMain.cpp:941 ]: Passenger core shutdown finished

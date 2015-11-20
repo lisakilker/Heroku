@@ -55,5 +55,5 @@ en:
       not_found: "totally not found"
       not_locked: "totally was not locked"
       not_saved:
-        one: "Oops, you seemed to have forgotten something!"
-        other: "Oops, you've forgotten to enter %{count} things!"
+        # one: "Oops, you seemed to have forgotten something!"
+        other: "Oops!"
